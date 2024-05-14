@@ -34,7 +34,8 @@ const Popup=({itemSelected,setItemSelected,bill,setBill}:Props)=>{
   
     return doubledItems;
   }
-  const deleteItem=(item:{name:string,price:number})=>{
+
+   const deleteItem=(item:{name:string,price:number})=>{
     console.log(item);
     const newArray = itemSelected.filter(itemm => itemm.name !== item.name)
     setItemSelected(newArray);
